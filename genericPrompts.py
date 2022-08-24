@@ -92,7 +92,7 @@ def set_prefix():
     f"{prefix}_Provider_Option":        "If you are a physician calling to speak to one of our providers, press 1",
     f"{prefix}_Q1st":                   "All of our caregivers are currently assisting other callers. Please remain on the line for the next available caregiver.",
     f"{prefix}_Q2nd":                   "Our caregivers continue to assist other callers, please remain on the line.",
-    f"{prefix} _QMyChart":               "Did you know you can use MyChart to request or cancel an appointment or request a medication refill. Ask your caregiver how to activate your account.",
+    f"{prefix}_QMyChart":               "Did you know you can use MyChart to request or cancel an appointment or request a medication refill. Ask your caregiver how to activate your account.",
     f"{prefix}_QPositionCCBOffer":      "If you'd like us to hold your place in line and call you back press 1. Otherwise remain on the line for the next available caregiver.",
     f"{prefix}_Quality":                "This call may be monitored or recorded for quality or training purposes.",
     f"{prefix}_RxInfo":                 "For prescription refills, contact your pharmacy directly and allow 72 business hours to process your request.",
