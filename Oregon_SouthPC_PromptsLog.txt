@@ -1,0 +1,724 @@
+[{'description': 'If this is a medical emergency, hang up and dial 911.',
+  'id': '9d547e8b-794c-4869-8541-ab88836f54e7',
+  'name': 'Oregon_SouthPC_911',
+  'resources': [{'id': 'en-us',
+                 'language': 'en-us',
+                 'languageDefault': True,
+                 'promptId': '9d547e8b-794c-4869-8541-ab88836f54e7',
+                 'selfUri': '/api/v2/architect/prompts/9d547e8b-794c-4869-8541-ab88836f54e7/resources/en-us',
+                 'text': 'If this is a medical emergency, hang up and dial '
+                         '911.',
+                 'ttsString': 'If this is a medical emergency, hang up and '
+                              'dial 911.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiOWQ1NDdlOGItNzk0Yy00ODY5LTg1NDEtYWI4ODgzNmY1NGU3IiwibGFuZ3VhZ2UiOiJlbi11cyIsImNhdGVnb3J5IjoidXNlciJ9'},
+                {'id': 'es-us',
+                 'language': 'es-us',
+                 'languageDefault': True,
+                 'promptId': '9d547e8b-794c-4869-8541-ab88836f54e7',
+                 'selfUri': '/api/v2/architect/prompts/9d547e8b-794c-4869-8541-ab88836f54e7/resources/es-us',
+                 'text': 'If this is a medical emergency, hang up and dial '
+                         '911.',
+                 'ttsString': 'If this is a medical emergency, hang up and '
+                              'dial 911.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiOWQ1NDdlOGItNzk0Yy00ODY5LTg1NDEtYWI4ODgzNmY1NGU3IiwibGFuZ3VhZ2UiOiJlcy11cyIsImNhdGVnb3J5IjoidXNlciJ9'}],
+  'selfUri': '/api/v2/architect/prompts/9d547e8b-794c-4869-8541-ab88836f54e7'},
+ {'description': 'Please continue to hold for the next available caregiver.',
+  'id': 'abdab2a2-1357-4ed5-a920-06a308c71b37',
+  'name': 'Oregon_SouthPC_CCB_NOT_Offered',
+  'resources': [{'id': 'en-us',
+                 'language': 'en-us',
+                 'languageDefault': True,
+                 'promptId': 'abdab2a2-1357-4ed5-a920-06a308c71b37',
+                 'selfUri': '/api/v2/architect/prompts/abdab2a2-1357-4ed5-a920-06a308c71b37/resources/en-us',
+                 'text': 'Please continue to hold for the next available '
+                         'caregiver.',
+                 'ttsString': 'Please continue to hold for the next available '
+                              'caregiver.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiYWJkYWIyYTItMTM1Ny00ZWQ1LWE5MjAtMDZhMzA4YzcxYjM3IiwibGFuZ3VhZ2UiOiJlbi11cyIsImNhdGVnb3J5IjoidXNlciJ9'},
+                {'id': 'es-us',
+                 'language': 'es-us',
+                 'languageDefault': True,
+                 'promptId': 'abdab2a2-1357-4ed5-a920-06a308c71b37',
+                 'selfUri': '/api/v2/architect/prompts/abdab2a2-1357-4ed5-a920-06a308c71b37/resources/es-us',
+                 'text': 'Please continue to hold for the next available '
+                         'caregiver.',
+                 'ttsString': 'Please continue to hold for the next available '
+                              'caregiver.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiYWJkYWIyYTItMTM1Ny00ZWQ1LWE5MjAtMDZhMzA4YzcxYjM3IiwibGFuZ3VhZ2UiOiJlcy11cyIsImNhdGVnb3J5IjoidXNlciJ9'}],
+  'selfUri': '/api/v2/architect/prompts/abdab2a2-1357-4ed5-a920-06a308c71b37'},
+ {'description': 'If you would like us to call you back at',
+  'id': '551db333-b82d-43a3-8cd8-1f21fb4351e0',
+  'name': 'Oregon_SouthPC_CCBANI1',
+  'resources': [{'id': 'en-us',
+                 'language': 'en-us',
+                 'languageDefault': True,
+                 'promptId': '551db333-b82d-43a3-8cd8-1f21fb4351e0',
+                 'selfUri': '/api/v2/architect/prompts/551db333-b82d-43a3-8cd8-1f21fb4351e0/resources/en-us',
+                 'text': 'If you would like us to call you back at',
+                 'ttsString': 'If you would like us to call you back at',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiNTUxZGIzMzMtYjgyZC00M2EzLThjZDgtMWYyMWZiNDM1MWUwIiwibGFuZ3VhZ2UiOiJlbi11cyIsImNhdGVnb3J5IjoidXNlciJ9'},
+                {'id': 'es-us',
+                 'language': 'es-us',
+                 'languageDefault': True,
+                 'promptId': '551db333-b82d-43a3-8cd8-1f21fb4351e0',
+                 'selfUri': '/api/v2/architect/prompts/551db333-b82d-43a3-8cd8-1f21fb4351e0/resources/es-us',
+                 'text': 'If you would like us to call you back at',
+                 'ttsString': 'If you would like us to call you back at',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiNTUxZGIzMzMtYjgyZC00M2EzLThjZDgtMWYyMWZiNDM1MWUwIiwibGFuZ3VhZ2UiOiJlcy11cyIsImNhdGVnb3J5IjoidXNlciJ9'}],
+  'selfUri': '/api/v2/architect/prompts/551db333-b82d-43a3-8cd8-1f21fb4351e0'},
+ {'description': 'press 1. To use a different callback number, press 2.',
+  'id': 'a062aae2-e55d-4593-ae17-a0a34c53dcaa',
+  'name': 'Oregon_SouthPC_CCBANI2',
+  'resources': [{'id': 'en-us',
+                 'language': 'en-us',
+                 'languageDefault': True,
+                 'promptId': 'a062aae2-e55d-4593-ae17-a0a34c53dcaa',
+                 'selfUri': '/api/v2/architect/prompts/a062aae2-e55d-4593-ae17-a0a34c53dcaa/resources/en-us',
+                 'text': 'press 1. To use a different callback number, press '
+                         '2.',
+                 'ttsString': 'press 1. To use a different callback number, '
+                              'press 2.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiYTA2MmFhZTItZTU1ZC00NTkzLWFlMTctYTBhMzRjNTNkY2FhIiwibGFuZ3VhZ2UiOiJlbi11cyIsImNhdGVnb3J5IjoidXNlciJ9'},
+                {'id': 'es-us',
+                 'language': 'es-us',
+                 'languageDefault': True,
+                 'promptId': 'a062aae2-e55d-4593-ae17-a0a34c53dcaa',
+                 'selfUri': '/api/v2/architect/prompts/a062aae2-e55d-4593-ae17-a0a34c53dcaa/resources/es-us',
+                 'text': 'press 1. To use a different callback number, press '
+                         '2.',
+                 'ttsString': 'press 1. To use a different callback number, '
+                              'press 2.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiYTA2MmFhZTItZTU1ZC00NTkzLWFlMTctYTBhMzRjNTNkY2FhIiwibGFuZ3VhZ2UiOiJlcy11cyIsImNhdGVnb3J5IjoidXNlciJ9'}],
+  'selfUri': '/api/v2/architect/prompts/a062aae2-e55d-4593-ae17-a0a34c53dcaa'},
+ {'description': 'You currently have a pending call back request. You may opt '
+                 'to cancel your previous request and return to waiting on '
+                 'hold however you will be placed farther back in line. Press '
+                 '1 to cancel your original request and be placed back on '
+                 'hold. Otherwise, hang up and your call will be returned in '
+                 'the order it was originally received.',
+  'id': '136b62df-3369-49d1-a190-870bf49925d9',
+  'name': 'Oregon_SouthPC_CCBDupReq',
+  'resources': [{'id': 'en-us',
+                 'language': 'en-us',
+                 'languageDefault': True,
+                 'promptId': '136b62df-3369-49d1-a190-870bf49925d9',
+                 'selfUri': '/api/v2/architect/prompts/136b62df-3369-49d1-a190-870bf49925d9/resources/en-us',
+                 'text': 'You currently have a pending call back request. You '
+                         'may opt to cancel your previous request and return '
+                         'to waiting on hold however you will be placed '
+                         'farther back in line. Press 1 to cancel your '
+                         'original request and be placed back on hold. '
+                         'Otherwise, hang up and your call will be returned in '
+                         'the order it was originally received.',
+                 'ttsString': 'You currently have a pending call back request. '
+                              'You may opt to cancel your previous request and '
+                              'return to waiting on hold however you will be '
+                              'placed farther back in line. Press 1 to cancel '
+                              'your original request and be placed back on '
+                              'hold. Otherwise, hang up and your call will be '
+                              'returned in the order it was originally '
+                              'received.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiMTM2YjYyZGYtMzM2OS00OWQxLWExOTAtODcwYmY0OTkyNWQ5IiwibGFuZ3VhZ2UiOiJlbi11cyIsImNhdGVnb3J5IjoidXNlciJ9'},
+                {'id': 'es-us',
+                 'language': 'es-us',
+                 'languageDefault': True,
+                 'promptId': '136b62df-3369-49d1-a190-870bf49925d9',
+                 'selfUri': '/api/v2/architect/prompts/136b62df-3369-49d1-a190-870bf49925d9/resources/es-us',
+                 'text': 'You currently have a pending call back request. You '
+                         'may opt to cancel your previous request and return '
+                         'to waiting on hold however you will be placed '
+                         'farther back in line. Press 1 to cancel your '
+                         'original request and be placed back on hold. '
+                         'Otherwise, hang up and your call will be returned in '
+                         'the order it was originally received.',
+                 'ttsString': 'You currently have a pending call back request. '
+                              'You may opt to cancel your previous request and '
+                              'return to waiting on hold however you will be '
+                              'placed farther back in line. Press 1 to cancel '
+                              'your original request and be placed back on '
+                              'hold. Otherwise, hang up and your call will be '
+                              'returned in the order it was originally '
+                              'received.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiMTM2YjYyZGYtMzM2OS00OWQxLWExOTAtODcwYmY0OTkyNWQ5IiwibGFuZ3VhZ2UiOiJlcy11cyIsImNhdGVnb3J5IjoidXNlciJ9'}],
+  'selfUri': '/api/v2/architect/prompts/136b62df-3369-49d1-a190-870bf49925d9'},
+ {'description': 'We are unable to process your callback request, please hold '
+                 'for the next available caregiver.',
+  'id': 'a194d89b-b1f5-432e-ab12-8f8ee8550714',
+  'name': 'Oregon_SouthPC_CCBError',
+  'resources': [{'id': 'en-us',
+                 'language': 'en-us',
+                 'languageDefault': True,
+                 'promptId': 'a194d89b-b1f5-432e-ab12-8f8ee8550714',
+                 'selfUri': '/api/v2/architect/prompts/a194d89b-b1f5-432e-ab12-8f8ee8550714/resources/en-us',
+                 'text': 'We are unable to process your callback request, '
+                         'please hold for the next available caregiver.',
+                 'ttsString': 'We are unable to process your callback request, '
+                              'please hold for the next available caregiver.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiYTE5NGQ4OWItYjFmNS00MzJlLWFiMTItOGY4ZWU4NTUwNzE0IiwibGFuZ3VhZ2UiOiJlbi11cyIsImNhdGVnb3J5IjoidXNlciJ9'},
+                {'id': 'es-us',
+                 'language': 'es-us',
+                 'languageDefault': True,
+                 'promptId': 'a194d89b-b1f5-432e-ab12-8f8ee8550714',
+                 'selfUri': '/api/v2/architect/prompts/a194d89b-b1f5-432e-ab12-8f8ee8550714/resources/es-us',
+                 'text': 'We are unable to process your callback request, '
+                         'please hold for the next available caregiver.',
+                 'ttsString': 'We are unable to process your callback request, '
+                              'please hold for the next available caregiver.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiYTE5NGQ4OWItYjFmNS00MzJlLWFiMTItOGY4ZWU4NTUwNzE0IiwibGFuZ3VhZ2UiOiJlcy11cyIsImNhdGVnb3J5IjoidXNlciJ9'}],
+  'selfUri': '/api/v2/architect/prompts/a194d89b-b1f5-432e-ab12-8f8ee8550714'},
+ {'description': 'You did not enter a valid 10 digit number.',
+  'id': '6000b582-31e4-4b10-86c4-2458503253d2',
+  'name': 'Oregon_SouthPC_CCBInvalidDigits',
+  'resources': [{'id': 'en-us',
+                 'language': 'en-us',
+                 'languageDefault': True,
+                 'promptId': '6000b582-31e4-4b10-86c4-2458503253d2',
+                 'selfUri': '/api/v2/architect/prompts/6000b582-31e4-4b10-86c4-2458503253d2/resources/en-us',
+                 'text': 'You did not enter a valid 10 digit number.',
+                 'ttsString': 'You did not enter a valid 10 digit number.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiNjAwMGI1ODItMzFlNC00YjEwLTg2YzQtMjQ1ODUwMzI1M2QyIiwibGFuZ3VhZ2UiOiJlbi11cyIsImNhdGVnb3J5IjoidXNlciJ9'},
+                {'id': 'es-us',
+                 'language': 'es-us',
+                 'languageDefault': True,
+                 'promptId': '6000b582-31e4-4b10-86c4-2458503253d2',
+                 'selfUri': '/api/v2/architect/prompts/6000b582-31e4-4b10-86c4-2458503253d2/resources/es-us',
+                 'text': 'You did not enter a valid 10 digit number.',
+                 'ttsString': 'You did not enter a valid 10 digit number.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiNjAwMGI1ODItMzFlNC00YjEwLTg2YzQtMjQ1ODUwMzI1M2QyIiwibGFuZ3VhZ2UiOiJlcy11cyIsImNhdGVnb3J5IjoidXNlciJ9'}],
+  'selfUri': '/api/v2/architect/prompts/6000b582-31e4-4b10-86c4-2458503253d2'},
+ {'code': 'architect.prompt.already.exists',
+  'contextId': '3e383732-3170-4bfc-a6fd-1beb021908ed',
+  'details': [],
+  'errors': [],
+  'message': "A prompt called 'Oregon_SouthPC_CCBNoANI' already exists.",
+  'messageParams': {'name': 'Oregon_SouthPC_CCBNoANI'},
+  'messageWithParams': "A prompt called '{name}' already exists.",
+  'resources': [{'code': 'architect.prompt.not.found',
+                 'contextId': '0f8fe317-3ad7-474f-8709-a04fac0d0e56',
+                 'details': [],
+                 'errors': [],
+                 'message': 'Could not find prompt with specified ID.',
+                 'messageParams': {},
+                 'messageWithParams': 'Could not find prompt with specified '
+                                      'ID.',
+                 'status': 404},
+                {'code': 'architect.prompt.not.found',
+                 'contextId': '5f7e4e51-ed8e-4d5b-be30-0e7f2a35c65a',
+                 'details': [],
+                 'errors': [],
+                 'message': 'Could not find prompt with specified ID.',
+                 'messageParams': {},
+                 'messageWithParams': 'Could not find prompt with specified '
+                                      'ID.',
+                 'status': 404}],
+  'status': 409},
+ {'description': 'Thank You. The next available caregiver will return your '
+                 'call in the order it was received.',
+  'id': 'ef108b68-c2b6-4f32-900a-2ad2bf34d3f1',
+  'name': 'Oregon_SouthPC_CCBScheduled',
+  'resources': [{'id': 'en-us',
+                 'language': 'en-us',
+                 'languageDefault': True,
+                 'promptId': 'ef108b68-c2b6-4f32-900a-2ad2bf34d3f1',
+                 'selfUri': '/api/v2/architect/prompts/ef108b68-c2b6-4f32-900a-2ad2bf34d3f1/resources/en-us',
+                 'text': 'Thank You. The next available caregiver will return '
+                         'your call in the order it was received.',
+                 'ttsString': 'Thank You. The next available caregiver will '
+                              'return your call in the order it was received.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiZWYxMDhiNjgtYzJiNi00ZjMyLTkwMGEtMmFkMmJmMzRkM2YxIiwibGFuZ3VhZ2UiOiJlbi11cyIsImNhdGVnb3J5IjoidXNlciJ9'},
+                {'id': 'es-us',
+                 'language': 'es-us',
+                 'languageDefault': True,
+                 'promptId': 'ef108b68-c2b6-4f32-900a-2ad2bf34d3f1',
+                 'selfUri': '/api/v2/architect/prompts/ef108b68-c2b6-4f32-900a-2ad2bf34d3f1/resources/es-us',
+                 'text': 'Thank You. The next available caregiver will return '
+                         'your call in the order it was received.',
+                 'ttsString': 'Thank You. The next available caregiver will '
+                              'return your call in the order it was received.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiZWYxMDhiNjgtYzJiNi00ZjMyLTkwMGEtMmFkMmJmMzRkM2YxIiwibGFuZ3VhZ2UiOiJlcy11cyIsImNhdGVnb3J5IjoidXNlciJ9'}],
+  'selfUri': '/api/v2/architect/prompts/ef108b68-c2b6-4f32-900a-2ad2bf34d3f1'},
+ {'description': 'We are temporarily unavailable to take your call due to a '
+                 'building emergency. If you are a physician, care provider or '
+                 'care facility with an urgent matter and would like to speak '
+                 'to the on-call provider, press 1.',
+  'id': 'bbffff95-2456-4676-910a-d827e8f8d803',
+  'name': 'Oregon_SouthPC_ClsdEmergency',
+  'resources': [{'id': 'en-us',
+                 'language': 'en-us',
+                 'languageDefault': True,
+                 'promptId': 'bbffff95-2456-4676-910a-d827e8f8d803',
+                 'selfUri': '/api/v2/architect/prompts/bbffff95-2456-4676-910a-d827e8f8d803/resources/en-us',
+                 'text': 'We are temporarily unavailable to take your call due '
+                         'to a building emergency. If you are a physician, '
+                         'care provider or care facility with an urgent matter '
+                         'and would like to speak to the on-call provider, '
+                         'press 1.',
+                 'ttsString': 'We are temporarily unavailable to take your '
+                              'call due to a building emergency. If you are a '
+                              'physician, care provider or care facility with '
+                              'an urgent matter and would like to speak to the '
+                              'on-call provider, press 1.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiYmJmZmZmOTUtMjQ1Ni00Njc2LTkxMGEtZDgyN2U4ZjhkODAzIiwibGFuZ3VhZ2UiOiJlbi11cyIsImNhdGVnb3J5IjoidXNlciJ9'},
+                {'id': 'es-us',
+                 'language': 'es-us',
+                 'languageDefault': True,
+                 'promptId': 'bbffff95-2456-4676-910a-d827e8f8d803',
+                 'selfUri': '/api/v2/architect/prompts/bbffff95-2456-4676-910a-d827e8f8d803/resources/es-us',
+                 'text': 'We are temporarily unavailable to take your call due '
+                         'to a building emergency. If you are a physician, '
+                         'care provider or care facility with an urgent matter '
+                         'and would like to speak to the on-call provider, '
+                         'press 1.',
+                 'ttsString': 'We are temporarily unavailable to take your '
+                              'call due to a building emergency. If you are a '
+                              'physician, care provider or care facility with '
+                              'an urgent matter and would like to speak to the '
+                              'on-call provider, press 1.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiYmJmZmZmOTUtMjQ1Ni00Njc2LTkxMGEtZDgyN2U4ZjhkODAzIiwibGFuZ3VhZ2UiOiJlcy11cyIsImNhdGVnb3J5IjoidXNlciJ9'}],
+  'selfUri': '/api/v2/architect/prompts/bbffff95-2456-4676-910a-d827e8f8d803'},
+ {'description': 'We are currently closed in observance of the holiday. If you '
+                 'are a physician, care provider or care facility with an '
+                 'urgent matter and would like to speak to the on-call '
+                 'provider, press 1.',
+  'id': '4b1e0146-565c-451d-8582-fc8ed5c7c394',
+  'name': 'Oregon_SouthPC_ClsdHoliday',
+  'resources': [{'id': 'en-us',
+                 'language': 'en-us',
+                 'languageDefault': True,
+                 'promptId': '4b1e0146-565c-451d-8582-fc8ed5c7c394',
+                 'selfUri': '/api/v2/architect/prompts/4b1e0146-565c-451d-8582-fc8ed5c7c394/resources/en-us',
+                 'text': 'We are currently closed in observance of the '
+                         'holiday. If you are a physician, care provider or '
+                         'care facility with an urgent matter and would like '
+                         'to speak to the on-call provider, press 1.',
+                 'ttsString': 'We are currently closed in observance of the '
+                              'holiday. If you are a physician, care provider '
+                              'or care facility with an urgent matter and '
+                              'would like to speak to the on-call provider, '
+                              'press 1.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiNGIxZTAxNDYtNTY1Yy00NTFkLTg1ODItZmM4ZWQ1YzdjMzk0IiwibGFuZ3VhZ2UiOiJlbi11cyIsImNhdGVnb3J5IjoidXNlciJ9'},
+                {'id': 'es-us',
+                 'language': 'es-us',
+                 'languageDefault': True,
+                 'promptId': '4b1e0146-565c-451d-8582-fc8ed5c7c394',
+                 'selfUri': '/api/v2/architect/prompts/4b1e0146-565c-451d-8582-fc8ed5c7c394/resources/es-us',
+                 'text': 'We are currently closed in observance of the '
+                         'holiday. If you are a physician, care provider or '
+                         'care facility with an urgent matter and would like '
+                         'to speak to the on-call provider, press 1.',
+                 'ttsString': 'We are currently closed in observance of the '
+                              'holiday. If you are a physician, care provider '
+                              'or care facility with an urgent matter and '
+                              'would like to speak to the on-call provider, '
+                              'press 1.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiNGIxZTAxNDYtNTY1Yy00NTFkLTg1ODItZmM4ZWQ1YzdjMzk0IiwibGFuZ3VhZ2UiOiJlcy11cyIsImNhdGVnb3J5IjoidXNlciJ9'}],
+  'selfUri': '/api/v2/architect/prompts/4b1e0146-565c-451d-8582-fc8ed5c7c394'},
+ {'description': 'We are temporarily unavailable to take your call due to '
+                 'inclement weather. Please visit our website at '
+                 'www.providence.org/locations for up to date clinic hours and '
+                 'information. If you are a physician, care provider or care '
+                 'facility with an urgent matter and would like to speak to '
+                 'the on-call provider, press 1.',
+  'id': '2aba4dfd-2f82-4fa8-9926-2a180f828f44',
+  'name': 'Oregon_SouthPC_ClsdWeather',
+  'resources': [{'id': 'en-us',
+                 'language': 'en-us',
+                 'languageDefault': True,
+                 'promptId': '2aba4dfd-2f82-4fa8-9926-2a180f828f44',
+                 'selfUri': '/api/v2/architect/prompts/2aba4dfd-2f82-4fa8-9926-2a180f828f44/resources/en-us',
+                 'text': 'We are temporarily unavailable to take your call due '
+                         'to inclement weather. Please visit our website at '
+                         'www.providence.org/locations for up to date clinic '
+                         'hours and information. If you are a physician, care '
+                         'provider or care facility with an urgent matter and '
+                         'would like to speak to the on-call provider, press '
+                         '1.',
+                 'ttsString': 'We are temporarily unavailable to take your '
+                              'call due to inclement weather. Please visit our '
+                              'website at www.providence.org/locations for up '
+                              'to date clinic hours and information. If you '
+                              'are a physician, care provider or care facility '
+                              'with an urgent matter and would like to speak '
+                              'to the on-call provider, press 1.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiMmFiYTRkZmQtMmY4Mi00ZmE4LTk5MjYtMmExODBmODI4ZjQ0IiwibGFuZ3VhZ2UiOiJlbi11cyIsImNhdGVnb3J5IjoidXNlciJ9'},
+                {'id': 'es-us',
+                 'language': 'es-us',
+                 'languageDefault': True,
+                 'promptId': '2aba4dfd-2f82-4fa8-9926-2a180f828f44',
+                 'selfUri': '/api/v2/architect/prompts/2aba4dfd-2f82-4fa8-9926-2a180f828f44/resources/es-us',
+                 'text': 'We are temporarily unavailable to take your call due '
+                         'to inclement weather. Please visit our website at '
+                         'www.providence.org/locations for up to date clinic '
+                         'hours and information. If you are a physician, care '
+                         'provider or care facility with an urgent matter and '
+                         'would like to speak to the on-call provider, press '
+                         '1.',
+                 'ttsString': 'We are temporarily unavailable to take your '
+                              'call due to inclement weather. Please visit our '
+                              'website at www.providence.org/locations for up '
+                              'to date clinic hours and information. If you '
+                              'are a physician, care provider or care facility '
+                              'with an urgent matter and would like to speak '
+                              'to the on-call provider, press 1.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiMmFiYTRkZmQtMmY4Mi00ZmE4LTk5MjYtMmExODBmODI4ZjQ0IiwibGFuZ3VhZ2UiOiJlcy11cyIsImNhdGVnb3J5IjoidXNlciJ9'}],
+  'selfUri': '/api/v2/architect/prompts/2aba4dfd-2f82-4fa8-9926-2a180f828f44'},
+ {'description': 'If you would like to speak with our advice nurse, remain on '
+                 'the line. Our after-hours nursing team can assist with care '
+                 'advice and connect with an on-call physician when needed.',
+  'id': 'f8c67845-6042-4baa-b4c2-903718fd7ab2',
+  'name': 'Oregon_SouthPC_NurseAdvice',
+  'resources': [{'id': 'en-us',
+                 'language': 'en-us',
+                 'languageDefault': True,
+                 'promptId': 'f8c67845-6042-4baa-b4c2-903718fd7ab2',
+                 'selfUri': '/api/v2/architect/prompts/f8c67845-6042-4baa-b4c2-903718fd7ab2/resources/en-us',
+                 'text': 'If you would like to speak with our advice nurse, '
+                         'remain on the line. Our after-hours nursing team can '
+                         'assist with care advice and connect with an on-call '
+                         'physician when needed.',
+                 'ttsString': 'If you would like to speak with our advice '
+                              'nurse, remain on the line. Our after-hours '
+                              'nursing team can assist with care advice and '
+                              'connect with an on-call physician when needed.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiZjhjNjc4NDUtNjA0Mi00YmFhLWI0YzItOTAzNzE4ZmQ3YWIyIiwibGFuZ3VhZ2UiOiJlbi11cyIsImNhdGVnb3J5IjoidXNlciJ9'},
+                {'id': 'es-us',
+                 'language': 'es-us',
+                 'languageDefault': True,
+                 'promptId': 'f8c67845-6042-4baa-b4c2-903718fd7ab2',
+                 'selfUri': '/api/v2/architect/prompts/f8c67845-6042-4baa-b4c2-903718fd7ab2/resources/es-us',
+                 'text': 'If you would like to speak with our advice nurse, '
+                         'remain on the line. Our after-hours nursing team can '
+                         'assist with care advice and connect with an on-call '
+                         'physician when needed.',
+                 'ttsString': 'If you would like to speak with our advice '
+                              'nurse, remain on the line. Our after-hours '
+                              'nursing team can assist with care advice and '
+                              'connect with an on-call physician when needed.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiZjhjNjc4NDUtNjA0Mi00YmFhLWI0YzItOTAzNzE4ZmQ3YWIyIiwibGFuZ3VhZ2UiOiJlcy11cyIsImNhdGVnb3J5IjoidXNlciJ9'}],
+  'selfUri': '/api/v2/architect/prompts/f8c67845-6042-4baa-b4c2-903718fd7ab2'},
+ {'description': 'If you are a physician calling to speak to one of our '
+                 'providers, press 1',
+  'id': 'f353d6e4-35fa-499a-9eb9-e1e55f4c8cf1',
+  'name': 'Oregon_SouthPC_Provider_Option',
+  'resources': [{'id': 'en-us',
+                 'language': 'en-us',
+                 'languageDefault': True,
+                 'promptId': 'f353d6e4-35fa-499a-9eb9-e1e55f4c8cf1',
+                 'selfUri': '/api/v2/architect/prompts/f353d6e4-35fa-499a-9eb9-e1e55f4c8cf1/resources/en-us',
+                 'text': 'If you are a physician calling to speak to one of '
+                         'our providers, press 1',
+                 'ttsString': 'If you are a physician calling to speak to one '
+                              'of our providers, press 1',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiZjM1M2Q2ZTQtMzVmYS00OTlhLTllYjktZTFlNTVmNGM4Y2YxIiwibGFuZ3VhZ2UiOiJlbi11cyIsImNhdGVnb3J5IjoidXNlciJ9'},
+                {'id': 'es-us',
+                 'language': 'es-us',
+                 'languageDefault': True,
+                 'promptId': 'f353d6e4-35fa-499a-9eb9-e1e55f4c8cf1',
+                 'selfUri': '/api/v2/architect/prompts/f353d6e4-35fa-499a-9eb9-e1e55f4c8cf1/resources/es-us',
+                 'text': 'If you are a physician calling to speak to one of '
+                         'our providers, press 1',
+                 'ttsString': 'If you are a physician calling to speak to one '
+                              'of our providers, press 1',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiZjM1M2Q2ZTQtMzVmYS00OTlhLTllYjktZTFlNTVmNGM4Y2YxIiwibGFuZ3VhZ2UiOiJlcy11cyIsImNhdGVnb3J5IjoidXNlciJ9'}],
+  'selfUri': '/api/v2/architect/prompts/f353d6e4-35fa-499a-9eb9-e1e55f4c8cf1'},
+ {'description': 'All of our caregivers are currently assisting other callers. '
+                 'Please remain on the line for the next available caregiver.',
+  'id': '38f54693-1532-4ad2-a4ab-485f66f25a56',
+  'name': 'Oregon_SouthPC_Q1st',
+  'resources': [{'id': 'en-us',
+                 'language': 'en-us',
+                 'languageDefault': True,
+                 'promptId': '38f54693-1532-4ad2-a4ab-485f66f25a56',
+                 'selfUri': '/api/v2/architect/prompts/38f54693-1532-4ad2-a4ab-485f66f25a56/resources/en-us',
+                 'text': 'All of our caregivers are currently assisting other '
+                         'callers. Please remain on the line for the next '
+                         'available caregiver.',
+                 'ttsString': 'All of our caregivers are currently assisting '
+                              'other callers. Please remain on the line for '
+                              'the next available caregiver.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiMzhmNTQ2OTMtMTUzMi00YWQyLWE0YWItNDg1ZjY2ZjI1YTU2IiwibGFuZ3VhZ2UiOiJlbi11cyIsImNhdGVnb3J5IjoidXNlciJ9'},
+                {'id': 'es-us',
+                 'language': 'es-us',
+                 'languageDefault': True,
+                 'promptId': '38f54693-1532-4ad2-a4ab-485f66f25a56',
+                 'selfUri': '/api/v2/architect/prompts/38f54693-1532-4ad2-a4ab-485f66f25a56/resources/es-us',
+                 'text': 'All of our caregivers are currently assisting other '
+                         'callers. Please remain on the line for the next '
+                         'available caregiver.',
+                 'ttsString': 'All of our caregivers are currently assisting '
+                              'other callers. Please remain on the line for '
+                              'the next available caregiver.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiMzhmNTQ2OTMtMTUzMi00YWQyLWE0YWItNDg1ZjY2ZjI1YTU2IiwibGFuZ3VhZ2UiOiJlcy11cyIsImNhdGVnb3J5IjoidXNlciJ9'}],
+  'selfUri': '/api/v2/architect/prompts/38f54693-1532-4ad2-a4ab-485f66f25a56'},
+ {'code': 'architect.prompt.already.exists',
+  'contextId': '6498ff2b-4070-441c-8c86-bbc613dcb2cb',
+  'details': [],
+  'errors': [],
+  'message': "A prompt called 'Oregon_SouthPC_Q2nd' already exists.",
+  'messageParams': {'name': 'Oregon_SouthPC_Q2nd'},
+  'messageWithParams': "A prompt called '{name}' already exists.",
+  'resources': [{'code': 'architect.prompt.not.found',
+                 'contextId': '47df2c6e-40f0-4c59-994d-1793a701d5ea',
+                 'details': [],
+                 'errors': [],
+                 'message': 'Could not find prompt with specified ID.',
+                 'messageParams': {},
+                 'messageWithParams': 'Could not find prompt with specified '
+                                      'ID.',
+                 'status': 404},
+                {'code': 'architect.prompt.not.found',
+                 'contextId': 'b6671714-0c66-4810-be1f-c7fa7a988ca5',
+                 'details': [],
+                 'errors': [],
+                 'message': 'Could not find prompt with specified ID.',
+                 'messageParams': {},
+                 'messageWithParams': 'Could not find prompt with specified '
+                                      'ID.',
+                 'status': 404}],
+  'status': 409},
+ {'code': 'architect.prompt.validate.failed.invalid.name',
+  'contextId': 'f23e6b00-4edc-452f-996d-7f87e7c87fe8',
+  'details': [],
+  'errors': [],
+  'message': "Failed to validate prompt due to invalid name 'Oregon_SouthPC "
+             "_QMyChart'.  Prompt names can only contain letters, numbers, and "
+             'the underscore, and must start with a letter or number.',
+  'messageParams': {'name': 'Oregon_SouthPC _QMyChart'},
+  'messageWithParams': 'Failed to validate prompt due to invalid name '
+                       "'{name}'.  Prompt names can only contain letters, "
+                       'numbers, and the underscore, and must start with a '
+                       'letter or number.',
+  'resources': [{'code': 'architect.prompt.not.found',
+                 'contextId': 'b8cbe81e-c53b-430c-9869-96bccff0695f',
+                 'details': [],
+                 'errors': [],
+                 'message': 'Could not find prompt with specified ID.',
+                 'messageParams': {},
+                 'messageWithParams': 'Could not find prompt with specified '
+                                      'ID.',
+                 'status': 404},
+                {'code': 'architect.prompt.not.found',
+                 'contextId': 'badbb5ba-b4b3-4749-94c3-53faf6115236',
+                 'details': [],
+                 'errors': [],
+                 'message': 'Could not find prompt with specified ID.',
+                 'messageParams': {},
+                 'messageWithParams': 'Could not find prompt with specified '
+                                      'ID.',
+                 'status': 404}],
+  'status': 400},
+ {'description': "If you'd like us to hold your place in line and call you "
+                 'back press 1. Otherwise remain on the line for the next '
+                 'available caregiver.',
+  'id': 'cfbae98a-4029-452f-bf51-b6906eff6965',
+  'name': 'Oregon_SouthPC_QPositionCCBOffer',
+  'resources': [{'id': 'en-us',
+                 'language': 'en-us',
+                 'languageDefault': True,
+                 'promptId': 'cfbae98a-4029-452f-bf51-b6906eff6965',
+                 'selfUri': '/api/v2/architect/prompts/cfbae98a-4029-452f-bf51-b6906eff6965/resources/en-us',
+                 'text': "If you'd like us to hold your place in line and call "
+                         'you back press 1. Otherwise remain on the line for '
+                         'the next available caregiver.',
+                 'ttsString': "If you'd like us to hold your place in line and "
+                              'call you back press 1. Otherwise remain on the '
+                              'line for the next available caregiver.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiY2ZiYWU5OGEtNDAyOS00NTJmLWJmNTEtYjY5MDZlZmY2OTY1IiwibGFuZ3VhZ2UiOiJlbi11cyIsImNhdGVnb3J5IjoidXNlciJ9'},
+                {'id': 'es-us',
+                 'language': 'es-us',
+                 'languageDefault': True,
+                 'promptId': 'cfbae98a-4029-452f-bf51-b6906eff6965',
+                 'selfUri': '/api/v2/architect/prompts/cfbae98a-4029-452f-bf51-b6906eff6965/resources/es-us',
+                 'text': "If you'd like us to hold your place in line and call "
+                         'you back press 1. Otherwise remain on the line for '
+                         'the next available caregiver.',
+                 'ttsString': "If you'd like us to hold your place in line and "
+                              'call you back press 1. Otherwise remain on the '
+                              'line for the next available caregiver.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiY2ZiYWU5OGEtNDAyOS00NTJmLWJmNTEtYjY5MDZlZmY2OTY1IiwibGFuZ3VhZ2UiOiJlcy11cyIsImNhdGVnb3J5IjoidXNlciJ9'}],
+  'selfUri': '/api/v2/architect/prompts/cfbae98a-4029-452f-bf51-b6906eff6965'},
+ {'description': 'This call may be monitored or recorded for quality or '
+                 'training purposes.',
+  'id': '89849292-cc15-40cb-a3d7-aebaa2f3c594',
+  'name': 'Oregon_SouthPC_Quality',
+  'resources': [{'id': 'en-us',
+                 'language': 'en-us',
+                 'languageDefault': True,
+                 'promptId': '89849292-cc15-40cb-a3d7-aebaa2f3c594',
+                 'selfUri': '/api/v2/architect/prompts/89849292-cc15-40cb-a3d7-aebaa2f3c594/resources/en-us',
+                 'text': 'This call may be monitored or recorded for quality '
+                         'or training purposes.',
+                 'ttsString': 'This call may be monitored or recorded for '
+                              'quality or training purposes.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiODk4NDkyOTItY2MxNS00MGNiLWEzZDctYWViYWEyZjNjNTk0IiwibGFuZ3VhZ2UiOiJlbi11cyIsImNhdGVnb3J5IjoidXNlciJ9'},
+                {'id': 'es-us',
+                 'language': 'es-us',
+                 'languageDefault': True,
+                 'promptId': '89849292-cc15-40cb-a3d7-aebaa2f3c594',
+                 'selfUri': '/api/v2/architect/prompts/89849292-cc15-40cb-a3d7-aebaa2f3c594/resources/es-us',
+                 'text': 'This call may be monitored or recorded for quality '
+                         'or training purposes.',
+                 'ttsString': 'This call may be monitored or recorded for '
+                              'quality or training purposes.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiODk4NDkyOTItY2MxNS00MGNiLWEzZDctYWViYWEyZjNjNTk0IiwibGFuZ3VhZ2UiOiJlcy11cyIsImNhdGVnb3J5IjoidXNlciJ9'}],
+  'selfUri': '/api/v2/architect/prompts/89849292-cc15-40cb-a3d7-aebaa2f3c594'},
+ {'description': 'For prescription refills, contact your pharmacy directly and '
+                 'allow 72 business hours to process your request.',
+  'id': 'fec41d76-2f88-4f00-8b9a-ddd77297c212',
+  'name': 'Oregon_SouthPC_RxInfo',
+  'resources': [{'id': 'en-us',
+                 'language': 'en-us',
+                 'languageDefault': True,
+                 'promptId': 'fec41d76-2f88-4f00-8b9a-ddd77297c212',
+                 'selfUri': '/api/v2/architect/prompts/fec41d76-2f88-4f00-8b9a-ddd77297c212/resources/en-us',
+                 'text': 'For prescription refills, contact your pharmacy '
+                         'directly and allow 72 business hours to process your '
+                         'request.',
+                 'ttsString': 'For prescription refills, contact your pharmacy '
+                              'directly and allow 72 business hours to process '
+                              'your request.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiZmVjNDFkNzYtMmY4OC00ZjAwLThiOWEtZGRkNzcyOTdjMjEyIiwibGFuZ3VhZ2UiOiJlbi11cyIsImNhdGVnb3J5IjoidXNlciJ9'},
+                {'id': 'es-us',
+                 'language': 'es-us',
+                 'languageDefault': True,
+                 'promptId': 'fec41d76-2f88-4f00-8b9a-ddd77297c212',
+                 'selfUri': '/api/v2/architect/prompts/fec41d76-2f88-4f00-8b9a-ddd77297c212/resources/es-us',
+                 'text': 'For prescription refills, contact your pharmacy '
+                         'directly and allow 72 business hours to process your '
+                         'request.',
+                 'ttsString': 'For prescription refills, contact your pharmacy '
+                              'directly and allow 72 business hours to process '
+                              'your request.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiZmVjNDFkNzYtMmY4OC00ZjAwLThiOWEtZGRkNzcyOTdjMjEyIiwibGFuZ3VhZ2UiOiJlcy11cyIsImNhdGVnb3J5IjoidXNlciJ9'}],
+  'selfUri': '/api/v2/architect/prompts/fec41d76-2f88-4f00-8b9a-ddd77297c212'},
+ {'description': 'Para continuar en español, presione 1.',
+  'id': '79e46e3f-3ebf-407d-b8f2-6901e6cf9e8c',
+  'name': 'Oregon_SouthPC_SpanishOpt1',
+  'resources': [{'id': 'en-us',
+                 'language': 'en-us',
+                 'languageDefault': True,
+                 'promptId': '79e46e3f-3ebf-407d-b8f2-6901e6cf9e8c',
+                 'selfUri': '/api/v2/architect/prompts/79e46e3f-3ebf-407d-b8f2-6901e6cf9e8c/resources/en-us',
+                 'text': 'Para continuar en español, presione 1.',
+                 'ttsString': 'Para continuar en español, presione 1.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiNzllNDZlM2YtM2ViZi00MDdkLWI4ZjItNjkwMWU2Y2Y5ZThjIiwibGFuZ3VhZ2UiOiJlbi11cyIsImNhdGVnb3J5IjoidXNlciJ9'},
+                {'id': 'es-us',
+                 'language': 'es-us',
+                 'languageDefault': True,
+                 'promptId': '79e46e3f-3ebf-407d-b8f2-6901e6cf9e8c',
+                 'selfUri': '/api/v2/architect/prompts/79e46e3f-3ebf-407d-b8f2-6901e6cf9e8c/resources/es-us',
+                 'text': 'Para continuar en español, presione 1.',
+                 'ttsString': 'Para continuar en español, presione 1.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiNzllNDZlM2YtM2ViZi00MDdkLWI4ZjItNjkwMWU2Y2Y5ZThjIiwibGFuZ3VhZ2UiOiJlcy11cyIsImNhdGVnb3J5IjoidXNlciJ9'}],
+  'selfUri': '/api/v2/architect/prompts/79e46e3f-3ebf-407d-b8f2-6901e6cf9e8c'},
+ {'description': 'We are currently experiencing some technical difficulties, '
+                 'please try your call at a later time. Thank you.',
+  'id': '39529129-163c-4750-8468-139285bea9e3',
+  'name': 'Oregon_SouthPC_TechnicalDifficulty',
+  'resources': [{'id': 'en-us',
+                 'language': 'en-us',
+                 'languageDefault': True,
+                 'promptId': '39529129-163c-4750-8468-139285bea9e3',
+                 'selfUri': '/api/v2/architect/prompts/39529129-163c-4750-8468-139285bea9e3/resources/en-us',
+                 'text': 'We are currently experiencing some technical '
+                         'difficulties, please try your call at a later time. '
+                         'Thank you.',
+                 'ttsString': 'We are currently experiencing some technical '
+                              'difficulties, please try your call at a later '
+                              'time. Thank you.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiMzk1MjkxMjktMTYzYy00NzUwLTg0NjgtMTM5Mjg1YmVhOWUzIiwibGFuZ3VhZ2UiOiJlbi11cyIsImNhdGVnb3J5IjoidXNlciJ9'},
+                {'id': 'es-us',
+                 'language': 'es-us',
+                 'languageDefault': True,
+                 'promptId': '39529129-163c-4750-8468-139285bea9e3',
+                 'selfUri': '/api/v2/architect/prompts/39529129-163c-4750-8468-139285bea9e3/resources/es-us',
+                 'text': 'We are currently experiencing some technical '
+                         'difficulties, please try your call at a later time. '
+                         'Thank you.',
+                 'ttsString': 'We are currently experiencing some technical '
+                              'difficulties, please try your call at a later '
+                              'time. Thank you.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiMzk1MjkxMjktMTYzYy00NzUwLTg0NjgtMTM5Mjg1YmVhOWUzIiwibGFuZ3VhZ2UiOiJlcy11cyIsImNhdGVnb3J5IjoidXNlciJ9'}],
+  'selfUri': '/api/v2/architect/prompts/39529129-163c-4750-8468-139285bea9e3'},
+ {'description': 'We are temporarily unavailable to take your call. If you are '
+                 'a physician, care provider or care facility with an urgent '
+                 'matter and would like to speak to the on-call provider, '
+                 'press 1. For all other non-urgent request, please try your '
+                 'call again later.',
+  'id': 'cd1a0fd7-1bb7-405b-b925-19074eb7ee2e',
+  'name': 'Oregon_SouthPC_Unavailable',
+  'resources': [{'id': 'en-us',
+                 'language': 'en-us',
+                 'languageDefault': True,
+                 'promptId': 'cd1a0fd7-1bb7-405b-b925-19074eb7ee2e',
+                 'selfUri': '/api/v2/architect/prompts/cd1a0fd7-1bb7-405b-b925-19074eb7ee2e/resources/en-us',
+                 'text': 'We are temporarily unavailable to take your call. If '
+                         'you are a physician, care provider or care facility '
+                         'with an urgent matter and would like to speak to the '
+                         'on-call provider, press 1. For all other non-urgent '
+                         'request, please try your call again later.',
+                 'ttsString': 'We are temporarily unavailable to take your '
+                              'call. If you are a physician, care provider or '
+                              'care facility with an urgent matter and would '
+                              'like to speak to the on-call provider, press 1. '
+                              'For all other non-urgent request, please try '
+                              'your call again later.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiY2QxYTBmZDctMWJiNy00MDViLWI5MjUtMTkwNzRlYjdlZTJlIiwibGFuZ3VhZ2UiOiJlbi11cyIsImNhdGVnb3J5IjoidXNlciJ9'},
+                {'id': 'es-us',
+                 'language': 'es-us',
+                 'languageDefault': True,
+                 'promptId': 'cd1a0fd7-1bb7-405b-b925-19074eb7ee2e',
+                 'selfUri': '/api/v2/architect/prompts/cd1a0fd7-1bb7-405b-b925-19074eb7ee2e/resources/es-us',
+                 'text': 'We are temporarily unavailable to take your call. If '
+                         'you are a physician, care provider or care facility '
+                         'with an urgent matter and would like to speak to the '
+                         'on-call provider, press 1. For all other non-urgent '
+                         'request, please try your call again later.',
+                 'ttsString': 'We are temporarily unavailable to take your '
+                              'call. If you are a physician, care provider or '
+                              'care facility with an urgent matter and would '
+                              'like to speak to the on-call provider, press 1. '
+                              'For all other non-urgent request, please try '
+                              'your call again later.',
+                 'uploadStatus': 'created',
+                 'uploadUri': 'https://apps.usw2.pure.cloud/uploads/v2/ivr?additionalInfo=eyJvcmdhbml6YXRpb25JZCI6ImE3ODI5OGJlLThkOTgtNDUwOS04MjUwLTgwY2FlMTg0YWZkOSIsInByb21wdElkIjoiY2QxYTBmZDctMWJiNy00MDViLWI5MjUtMTkwNzRlYjdlZTJlIiwibGFuZ3VhZ2UiOiJlcy11cyIsImNhdGVnb3J5IjoidXNlciJ9'}],
+  'selfUri': '/api/v2/architect/prompts/cd1a0fd7-1bb7-405b-b925-19074eb7ee2e'}]
