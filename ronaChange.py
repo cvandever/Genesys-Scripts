@@ -78,6 +78,7 @@ def get_queue(id):
         print(f"Not Seeing a {e.args[0]}")
     queue_payload = json.dumps(data,cls=JSONEncoder)
     put_queue(id,queue_payload)
+    
 
 def put_queue(id,payload):
     url = f"{api_url}routing/queues/{id}"

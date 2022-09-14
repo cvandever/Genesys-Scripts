@@ -30,16 +30,16 @@ users_roles = []
 GENESYS_CLOUD_CLIENT_ID = os.getenv('GENESYS_CLOUD_CLIENT_ID_PE')
 GENESYS_CLOUD_CLIENT_SECRET = os.getenv('GENESYS_CLOUD_CLIENT_SECRET_PE')
 
-clinic_1 = {'clinicTitle': 'PMG_MMC_Hillcrest'}
-clinic_2 = {'clinicTitle': 'PMG_Medford_Pediatrics'}
-clinic_3 = {'clinicTitle': 'PMG_South_Call_Center'}
-clinic_4 = {'clinicTitle': 'PMG_Camas'}
-clinic_5 = {'clinicTitle': 'PMG_Gateway_Family'}
-clinic_6 = {'clinicTitle': 'PMG_Gateway_Internal'}
-clinic_7 = {'clinicTitle': 'PMG_Mill_Plain_Family'}
-clinic_8 = {'clinicTitle': 'PMG_Mill_Plain_Walkin'}
+clinic_1 = {'clinicTitle': 'PMG_Southeast_Family_Medicine'}
+clinic_2 = {'clinicTitle': 'PMG_Northeast'}
+clinic_3 = {'clinicTitle': 'PMG_at_st'}
+clinic_4 = {'clinicTitle': 'PMG_'}
+clinic_5 = {'clinicTitle': 'PMG_'}
+clinic_6 = {'clinicTitle': 'PMG_'}
+clinic_7 = {'clinicTitle': 'PMG_'}
+clinic_8 = {'clinicTitle': 'PMG_'}
 
-clinics = [clinic_1,clinic_2,clinic_3]
+clinics = [clinic_1, clinic_2, clinic_3]
 
 
 def get_api_token():
@@ -136,18 +136,23 @@ def get_locations():
             id = location.get('id')
             name = location.get('name')
             verified = location.get('addressVerified')
-            city = location['address'].get('city')
-            state = location['address'].get('state')
-            street1 = location['address'].get('street1')
-            street2 = location['address'].get('street2')
-            zipcode = location['address'].get('zipcode')
-            address = f"{street1} {street2}  {city}, {state} {zipcode}"
             try:
-                elin = location['emergencyNumber'].get('number')
+                city = location['address'].get('city')
+                state = location['address'].get('state')
+                street1 = location['address'].get('street1')
+                if location['address'].get('street2') != None:
+                    street2 = location['address'].get('street2')
+                else:
+                    street2 = ""
+                zipcode = location['address'].get('zipcode')
+                address = f"{street1} {street2} {city}, {state} {zipcode}"
+                try:
+                    elin = location['emergencyNumber'].get('number')
+                except KeyError:
+                    elin = "*No Emergency Number for location*"
+                locations.append({'name': name, 'id': id, 'address': address, 'elin': elin, 'addressVerified': verified})
             except KeyError:
-                elin = "*No Emergency Number for location*"
-
-            locations.append({'name': name, 'id': id, 'address': address, 'elin': elin, 'addressVerified': verified})
+                locations.append({'name': name, 'id': id, 'addressVerified': verified})
 
 
 
@@ -585,7 +590,8 @@ def create_excel():
         group_queue_tab = 0
         schedules_schedgroup_tab = 0
 
-        clinic_group = 'Oregon Group 7'
+
+        clinic_group = 'Oregon_Teaching - Group 9'
         clinic_name = clinic.get('clinicTitle')
         writer = pd.ExcelWriter(f"{clinic_name}_{clinic_group}_Admin_QA.xlsx", engine="xlsxwriter")
 

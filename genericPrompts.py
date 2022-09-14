@@ -1,4 +1,5 @@
 import PureCloudPlatformClientV2 as v2
+import pandas as pd
 import requests
 import json
 import os
@@ -10,8 +11,8 @@ log = []
 #GENESYS_CLOUD_CLIENT_SECRET_PE
 
 #environment variables for OAuth keys
-GENESYS_CLOUD_CLIENT_ID = os.getenv('GENESYS_CLOUD_CLIENT_ID_CE')
-GENESYS_CLOUD_CLIENT_SECRET = os.getenv('GENESYS_CLOUD_CLIENT_SECRET_CE')
+GENESYS_CLOUD_CLIENT_ID = os.getenv('GENESYS_CLOUD_CLIENT_ID_PE')
+GENESYS_CLOUD_CLIENT_SECRET = os.getenv('GENESYS_CLOUD_CLIENT_SECRET_PE')
 
 
 
@@ -85,9 +86,9 @@ def set_prefix():
     f"{prefix}_CCBInvalidDigits":       "You did not enter a valid 10 digit number.",
     f"{prefix}_CCBNoANI":               "Please enter your 10-digit callback number, beginning with the area code.",
     f"{prefix}_CCBScheduled":           "Thank You. The next available caregiver will return your call in the order it was received.",
-    f"{prefix}_ClsdEmergency":          "We are temporarily unavailable to take your call due to a building emergency. If you are a physician, care provider or care facility with an urgent matter and would like to speak to the on-call provider, press 1.",
-    f"{prefix}_ClsdHoliday":            "We are currently closed in observance of the holiday. If you are a physician, care provider or care facility with an urgent matter and would like to speak to the on-call provider, press 1.",
-    f"{prefix}_ClsdWeather":            "We are temporarily unavailable to take your call due to inclement weather. Please visit our website at www.providence.org/locations for up to date clinic hours and information. If you are a physician, care provider or care facility with an urgent matter and would like to speak to the on-call provider, press 1.",
+    f"{prefix}_ClsdEmergency":          "We are temporarily unavailable to take your call due to a building emergency. If you are a physician, care provider or care facility and would like to speak to the on-call provider, press 1.",
+    f"{prefix}_ClsdHoliday":            "We are currently closed in observance of the holiday. If you are a physician, care provider or care facility and would like to speak to the on-call provider, press 1.",
+    f"{prefix}_ClsdWeather":            "We are temporarily unavailable to take your call due to inclement weather. Please visit our website at www.providence.org/locations for up to date clinic hours and information. If you are a physician, care provider or care facility and would like to speak to the on-call provider, press 1.",
     f"{prefix}_NurseAdvice":            "If you would like to speak with our advice nurse, remain on the line. Our after-hours nursing team can assist with care advice and connect with an on-call physician when needed.",
     f"{prefix}_Provider_Option":        "If you are a physician calling to speak to one of our providers, press 1",
     f"{prefix}_Q1st":                   "All of our caregivers are currently assisting other callers. Please remain on the line for the next available caregiver.",
@@ -98,7 +99,7 @@ def set_prefix():
     f"{prefix}_RxInfo":                 "For prescription refills, contact your pharmacy directly and allow 72 business hours to process your request.",
     f"{prefix}_SpanishOpt1":            "Para continuar en español, presione 1.",
     f"{prefix}_TechnicalDifficulty":    "We are currently experiencing some technical difficulties, please try your call at a later time. Thank you.",
-    f"{prefix}_Unavailable":            "We are temporarily unavailable to take your call. If you are a physician, care provider or care facility with an urgent matter and would like to speak to the on-call provider, press 1. For all other non-urgent request, please try your call again later."
+    f"{prefix}_Unavailable_TryLater":            "We are temporarily unavailable to take your call. If you are a physician, care provider or care facility and would like to speak to the on-call provider, press 1. For all other non-urgent request, please try your call again later."
         }
 
 def create_log():
@@ -112,6 +113,27 @@ def upload_prompts(prompts:dict):
     for k,v in prompts.items():
         status = create_custom_prompts(k,v,resources)
         print(f"{k} - {status} \n")
+
+def create_prompt_import():
+    writer = pd.ExcelWriter(f"{prefix}_prompt_import.xlsx", engine="xlsxwriter")
+    prompt_dicts = []
+    for log in teach_log:
+        prompt_name = log.get('name')
+        prompt_type = 'user'
+        description = log.get('description')
+        resources = log.get('resources')
+        prompt_dict = {'name': prompt_name,'type': prompt_type, 'description': description}
+        for resource in resources:
+            lang = resource.get('language')
+            ttsString = resource.get('ttsString')
+            prompt_dict.update({f'tts_{lang}': ttsString, f'audio_{lang}': ""})
+        prompt_dicts.append(prompt_dict)
+
+    #Create site db to prepare for excel
+    prompt_df = pd.json_normalize(prompt_dicts)
+    prompt_df.to_excel(writer, sheet_name=f"{prefix}", index=False)   
+
+    writer.save()
     
 
 
@@ -121,9 +143,9 @@ def main():
     set_prefix()
     upload_prompts(generic_prompts)
     create_log()
+    create_prompt_import()
     
     
 
 if __name__ == '__main__':
     main()
-    
