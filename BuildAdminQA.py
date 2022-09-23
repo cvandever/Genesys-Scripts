@@ -27,19 +27,19 @@ users_roles = []
 
 
 #environment variables for OAuth keys
-GENESYS_CLOUD_CLIENT_ID = os.getenv('GENESYS_CLOUD_CLIENT_ID_PE')
-GENESYS_CLOUD_CLIENT_SECRET = os.getenv('GENESYS_CLOUD_CLIENT_SECRET_PE')
+GENESYS_CLOUD_CLIENT_ID = os.getenv('GENESYS_CLOUD_CLIENT_ID_PACMED')
+GENESYS_CLOUD_CLIENT_SECRET = os.getenv('GENESYS_CLOUD_CLIENT_SECRET_PACMED')
 
-clinic_1 = {'clinicTitle': 'PMG_Southeast_Family_Medicine'}
-clinic_2 = {'clinicTitle': 'PMG_Northeast'}
-clinic_3 = {'clinicTitle': 'PMG_at_st'}
+clinic_1 = {'clinicTitle': 'PMC_LYC_Family_Medicine'}
+clinic_2 = {'clinicTitle': 'PMC_FHC_Family_Practice'}
+clinic_3 = {'clinicTitle': 'PMC_NOC_Family_Practice'}
 clinic_4 = {'clinicTitle': 'PMG_'}
 clinic_5 = {'clinicTitle': 'PMG_'}
 clinic_6 = {'clinicTitle': 'PMG_'}
 clinic_7 = {'clinicTitle': 'PMG_'}
 clinic_8 = {'clinicTitle': 'PMG_'}
 
-clinics = [clinic_1, clinic_2, clinic_3]
+clinics = [clinic_1, clinic_2,clinic_3]
 
 
 def get_api_token():
@@ -388,13 +388,11 @@ def get_all_users():
         for user in list['entities']:
             location_ids = []
             group_ids = []
+            extensions = []
             id = user.get('id')
             name = user.get('name')
             division = user['division'].get('name')
             email = user.get('email')
-            addresses = user.get('addresses')
-            for address in addresses:
-                extensions = address.get('extension')
             title = user.get('title')
             locations = user.get('locations')
             for location in locations:
@@ -402,7 +400,15 @@ def get_all_users():
             groups = user.get('groups')
             for group in groups:
                 group_ids.append(group.get('id'))
-
+            try:
+                addresses = user.get('addresses')
+                for address in addresses:
+                    try:
+                        extensions.append(address.get('extension'))
+                    except:
+                        extensions.append("No Extension")
+            except KeyError:
+               extensions.append("No Extension")
             users.append({'name': name, 'id': id, 'division': division, 'email': email, 'extension': extensions, 'title': title, 'locations': location_ids, 'groups': group_ids})
 
 
@@ -585,22 +591,28 @@ def schedule_names():
 
 
 def create_excel():
-    for clinic in clinics:    
+    for clinic in clinics:   
         site_location_tab = 0
         group_queue_tab = 0
         schedules_schedgroup_tab = 0
+        pprint(clinic)
 
 
-        clinic_group = 'Oregon_Teaching - Group 9'
+        clinic_group = 'PacMed'
         clinic_name = clinic.get('clinicTitle')
         writer = pd.ExcelWriter(f"{clinic_name}_{clinic_group}_Admin_QA.xlsx", engine="xlsxwriter")
 
         #Create site db to prepare for excel
-        site_df = pd.json_normalize(clinic,'sites', record_prefix='site - ').explode('site - sitePhones').drop('site - id',axis=1)
-        #after exploding list clean up duplicates
-        site_df['Duplicated'] = site_df.duplicated(subset=['site - name','site - callerId', 'site - callerName','site - linkedLocation'],keep="first")
-        site_df.loc[site_df["Duplicated"] == True, ['site - name','site - callerId', 'site - callerName','site - linkedLocation']] = NaN
-        site_df.drop("Duplicated",axis=1, inplace=True)
+        try:
+            site_df = pd.json_normalize(clinic,'sites', record_prefix='site - ').explode('site - sitePhones').drop('site - id',axis=1)
+            #after exploding list clean up duplicates
+
+            site_df['Duplicated'] = site_df.duplicated(subset=['site - name','site - callerId', 'site - callerName','site - linkedLocation'],keep="first")
+            site_df.loc[site_df["Duplicated"] == True, ['site - name','site - callerId', 'site - callerName','site - linkedLocation']] = NaN
+            site_df.drop("Duplicated",axis=1, inplace=True)
+        except KeyError:
+            site_error = [{"Error": f"No site found for {clinic_name}"}]
+            site_df = pd.DataFrame(site_error)
         #Send db to excel file on sheet name sites and locations
         
         site_df.to_excel(writer, sheet_name="Sites & Locations", index=False)
@@ -608,50 +620,64 @@ def create_excel():
         site_location_tab += site_len
         #Create location db to prepare for excel
 
+        try:
+            location_df = pd.json_normalize(clinic,'locations', record_prefix='location - ').explode('location - locationMembers').drop('location - id',axis=1)
 
-        location_df = pd.json_normalize(clinic,'locations', record_prefix='location - ').explode('location - locationMembers').drop('location - id',axis=1)
-
-        location_df['Duplicated'] = location_df.duplicated(subset=['location - name','location - address', 'location - elin','location - addressVerified'],keep="first")
-        location_df.loc[location_df["Duplicated"] == True, ['location - name','location - address', 'location - elin','location - addressVerified']] = NaN
-        location_df.drop("Duplicated",axis=1, inplace=True)
+            location_df['Duplicated'] = location_df.duplicated(subset=['location - name','location - address', 'location - elin','location - addressVerified'],keep="first")
+            location_df.loc[location_df["Duplicated"] == True, ['location - name','location - address', 'location - elin','location - addressVerified']] = NaN
+            location_df.drop("Duplicated",axis=1, inplace=True)
+        except KeyError:
+            location_error = [{"Error": f"No location found for {clinic_name}"}]
+            location_df = pd.DataFrame(location_error)
 
         location_df.to_excel(writer, sheet_name="Sites & Locations", index=False, startrow=site_len)
 
 
         #for each group create db to prepare for excel
+        
         for group in clinic['groups']:
-            
-            if group['groupMembers'] != [] and group['owners'] != []:
-                group_df = pd.json_normalize(group).explode('owners').drop(['id','groupMembers'],axis=1)
-                group_members_df = pd.json_normalize(group,'groupMembers')
-                group_members_df.columns = ['groupMembers']
+            try:
+                if group['groupMembers'] != [] and group['owners'] != []:
+                    group_df = pd.json_normalize(group).explode('owners').drop(['id','groupMembers'],axis=1)
+                    group_members_df = pd.json_normalize(group,'groupMembers')
+                    group_members_df.columns = ['groupMembers']
 
-                group_df['Duplicated'] = group_df.duplicated(subset=['name','phoneNumber','memberCount'],keep="first")
-                group_df.loc[group_df["Duplicated"] == True, ['name','phoneNumber','memberCount']] = NaN
-                group_df.drop("Duplicated",axis=1, inplace=True)
+                    group_df['Duplicated'] = group_df.duplicated(subset=['name','phoneNumber','memberCount'],keep="first")
+                    group_df.loc[group_df["Duplicated"] == True, ['name','phoneNumber','memberCount']] = NaN
+                    group_df.drop("Duplicated",axis=1, inplace=True)
 
-                group_df.reset_index(inplace=True, drop=True)
-                group_df = pd.concat([group_df,group_members_df],axis=1)
-                group_len = len(group_df) + 2
+                    group_df.reset_index(inplace=True, drop=True)
+                    group_df = pd.concat([group_df,group_members_df],axis=1)
+                    
 
-            else:
-                group_df = pd.json_normalize(group).explode('owners').explode('groupMembers').drop('id',axis=1)
+                elif group['owners'] != []:
+                    group_df = pd.json_normalize(group).explode('owners').explode('groupMembers').drop('id',axis=1)
 
-                group_df['Duplicated'] = group_df.duplicated(subset=['name','phoneNumber','memberCount','owners'],keep="first")
-                group_df.loc[group_df["Duplicated"] == True, ['name','phoneNumber','memberCount','owners']] = NaN
-                group_df.drop("Duplicated",axis=1, inplace=True)
+                    group_df['Duplicated'] = group_df.duplicated(subset=['name','phoneNumber','memberCount','owners'],keep="first")
+                    group_df.loc[group_df["Duplicated"] == True, ['name','phoneNumber','memberCount','owners']] = NaN
+                    group_df.drop("Duplicated",axis=1, inplace=True)
+
+            except KeyError:
+                group_error = [{"Error": f"No {group['name']} found for {clinic_name}"}]
+                group_df = pd.DataFrame(group_error)
 
             group_df.to_excel(writer, sheet_name="Groups & Queues", index=False,startrow=group_queue_tab)
+            group_len = len(group_df) + 2
             group_queue_tab += group_len
 
 
         for queue in clinic['queues']:
 
-            queue_df = pd.json_normalize(queue).explode('queueMembers').drop('id',axis=1)
+            try:
+                queue_df = pd.json_normalize(queue).explode('queueMembers').drop('id',axis=1)
 
-            queue_df['Duplicated'] = queue_df.duplicated(subset=['name','division', 'memberCount','callingPartyName','callingPartyNumber', 'queueFlow', 'acwSettings.wrapupPrompt','acwSettings.timeoutMs','call.alertingTimeoutSeconds', 'call.serviceLevel.percentage','call.serviceLevel.durationMs'],keep="first")
-            queue_df.loc[queue_df["Duplicated"] == True, ['name','division', 'memberCount','callingPartyName','callingPartyNumber', 'queueFlow', 'acwSettings.wrapupPrompt','acwSettings.timeoutMs','call.alertingTimeoutSeconds', 'call.serviceLevel.percentage','call.serviceLevel.durationMs']] = NaN
-            queue_df.drop("Duplicated",axis=1, inplace=True)
+                queue_df['Duplicated'] = queue_df.duplicated(subset=['name','division', 'memberCount','callingPartyName','callingPartyNumber', 'queueFlow', 'acwSettings.wrapupPrompt','acwSettings.timeoutMs','call.alertingTimeoutSeconds', 'call.serviceLevel.percentage','call.serviceLevel.durationMs'],keep="first")
+                queue_df.loc[queue_df["Duplicated"] == True, ['name','division', 'memberCount','callingPartyName','callingPartyNumber', 'queueFlow', 'acwSettings.wrapupPrompt','acwSettings.timeoutMs','call.alertingTimeoutSeconds', 'call.serviceLevel.percentage','call.serviceLevel.durationMs']] = NaN
+                queue_df.drop("Duplicated",axis=1, inplace=True)
+            except KeyError:
+                queue_error = [{"Error": f"No {queue['name']} found for {clinic_name}"}]
+                queue_df = pd.DataFrame(queue_error)
+
             queue_len = len(queue_df) + 2
             queue_df.to_excel(writer, sheet_name="Groups & Queues", index=False, startrow=group_queue_tab)
             group_queue_tab += queue_len
@@ -661,8 +687,11 @@ def create_excel():
         did_len = len(did_df) + 3
         did_df.to_excel(writer, sheet_name="DIDs, Emer Groups & Prompts", index=False)
 
-
-        emergency_group_df = pd.json_normalize(clinic,'emergencyGroups', record_prefix='Emer Group - ') 
+        try:
+            emergency_group_df = pd.json_normalize(clinic,'emergencyGroups', record_prefix='Emer Group - ') 
+        except KeyError:
+            emergency_group_error = [{"Error": f"No ememegency groups found for {clinic_name}"}]
+            emergency_group_df = pd.DataFrame(emergency_group_error)
         emer_group_len = len(emergency_group_df) + did_len + 3
         emergency_group_df.to_excel(writer, sheet_name="DIDs, Emer Groups & Prompts", index=False, startrow=did_len)
 

@@ -20,7 +20,7 @@ class JSONEncoder(json.JSONEncoder):
             return int(obj)
         return json.JSONEncoder.default(self, obj)
 
-
+#Genesys Cloud SDK 
 def get_api_token():
     #Setting the Region 
     region = v2.PureCloudRegionHosts.us_west_2
